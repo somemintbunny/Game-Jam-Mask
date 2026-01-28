@@ -16,6 +16,11 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
+    public GameObject maskView;
+    public float maskTime = 600;
+    public float maskCooldown;
+    public bool canMask;
+    public static FirstPersonController instance;
     private Rigidbody rb;
 
     #region Camera Movement Variables
@@ -92,7 +97,7 @@ public class FirstPersonController : MonoBehaviour
     private float sprintBarHeight;
     private bool isSprintCooldown = false;
     private float sprintCooldownReset;
-
+    public bool Masked;
 
     #endregion
 
@@ -156,6 +161,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        instance = this;
         if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -223,6 +229,24 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetMouseButtonUp(1))
+        {
+            if(Masked)
+            {
+                Masked = false;
+            }else
+            {
+                Masked = true;
+            }
+        }
+        if(Masked)
+        {
+            maskView.SetActive(true);
+        }else
+        {
+            maskView.SetActive(false);
+        }
+    
 
         #region Camera
 
@@ -388,6 +412,13 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!Masked && maskTime < 600)
+        {
+            maskTime--; 
+        }  //for limiting mask use
+        if(maskTime == 0){
+            canMask = false;
+        }
         #region Movement
 
         if (playerCanMove)
