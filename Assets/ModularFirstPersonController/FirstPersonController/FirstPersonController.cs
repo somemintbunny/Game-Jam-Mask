@@ -19,7 +19,7 @@ public class FirstPersonController : MonoBehaviour
     public GameObject maskView;
     public float maskTime = 600;
     public float maskCooldown;
-    public bool canMask;
+    public bool canMask = true;
     public static FirstPersonController instance;
     private Rigidbody rb;
 
@@ -229,25 +229,23 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetMouseButtonUp(1))
+        if (canMask)
         {
-            if(Masked)
+            if(Input.GetMouseButtonUp(1))
             {
-                Masked = false;
-            }else
-            {
-                Masked = true;
+                if(Masked)
+                {
+                    Masked = false;
+                }else
+                {
+                    Masked = true;
+                }
             }
         }
-        if(Masked)
+        else
         {
-            maskView.SetActive(true);
-        }else
-        {
-            maskView.SetActive(false);
+            Masked = false;
         }
-    
-
         #region Camera
 
         // Control camera movement
@@ -412,13 +410,32 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!Masked && maskTime < 600)
+        #region Mask
+        if(Masked && maskTime > 0)
         {
             maskTime--; 
         }  //for limiting mask use
         if(maskTime == 0){
             canMask = false;
         }
+        if (!canMask && maskTime < 600)
+        {
+            maskTime++;
+        }
+        if(maskTime == 600)
+        {
+            canMask = true;
+        }
+
+
+        if(Masked)
+        {
+            maskView.SetActive(true);
+        }else
+        {
+            maskView.SetActive(false);
+        }
+        #endregion
         #region Movement
 
         if (playerCanMove)
