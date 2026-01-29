@@ -17,16 +17,15 @@ public class MaskLight : MonoBehaviour
     {
         if(FirstPersonController.instance.Masked == false)
         {
-            Color maskOff = new Color(255f, 255f, 255f, 255f);
+            Color maskOff = new Color(255f, 255f, 255f, 180f);
             lt.color = (maskOff/400);
-            Color backCol = new Color(0f, 0f, 0f, 255f);
-            RenderSettings.fogColor = backCol;
+            RenderSettings.fogColor = maskOff/400;
         }else
         {
             Color maskOn = new Color(198f, 255f, 230f, 255f);
             lt.color = (maskOn/400);
             Color backCol = new Color(0f, 53f, 40f, 255f);
-            RenderSettings.fogColor = backCol/400;
+            RenderSettings.fogColor = backCol/300;
         }
 
     }

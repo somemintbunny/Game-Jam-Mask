@@ -17,8 +17,8 @@ public class Cam : MonoBehaviour
     {
         if(FirstPersonController.instance.Masked == false)
         {
-            Color backCol = new Color(0f, 0f, 0f, 0f);
-            cam.backgroundColor = backCol/300;
+            Color backCol = new Color(255f, 255f, 255f, 180f);
+            cam.backgroundColor = backCol/400;
         }else
         {
             Color backCol = new Color(0f, 53f, 40f, 255f);
