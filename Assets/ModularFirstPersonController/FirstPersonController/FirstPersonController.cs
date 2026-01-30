@@ -460,7 +460,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * sprintSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.velocity;
+                Vector3 velocity = rb.linearVelocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
@@ -498,7 +498,7 @@ public class FirstPersonController : MonoBehaviour
                 targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
 
                 // Apply a force that attempts to reach our target velocity
-                Vector3 velocity = rb.velocity;
+                Vector3 velocity = rb.linearVelocity;
                 Vector3 velocityChange = (targetVelocity - velocity);
                 velocityChange.x = Mathf.Clamp(velocityChange.x / 40, -maxVelocityChange, maxVelocityChange);
                 velocityChange.z = Mathf.Clamp(velocityChange.z / 40, -maxVelocityChange, maxVelocityChange);
@@ -542,11 +542,11 @@ public class FirstPersonController : MonoBehaviour
             {
                 if(Input.GetKey(KeyCode.E))
                 {
-                    rb.AddForce(GetComponent<Rigidbody>().velocity.x * 1.2f, jumpPower*0.4f, GetComponent<Rigidbody>().velocity.z * 1.2f, ForceMode.Impulse);
+                    rb.AddForce(GetComponent<Rigidbody>().linearVelocity.x * 1.2f, jumpPower*0.4f, GetComponent<Rigidbody>().linearVelocity.z * 1.2f, ForceMode.Impulse);
                     isGrounded = false;
                 }else
                 {
-                    rb.AddForce(GetComponent<Rigidbody>().velocity.x * -1, jumpPower*1.4f, GetComponent<Rigidbody>().velocity.z * -1, ForceMode.Impulse);
+                    rb.AddForce(GetComponent<Rigidbody>().linearVelocity.x * -1, jumpPower*1.4f, GetComponent<Rigidbody>().linearVelocity.z * -1, ForceMode.Impulse);
                     isGrounded = false;
                 }
 
