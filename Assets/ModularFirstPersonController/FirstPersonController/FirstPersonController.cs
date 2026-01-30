@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
     using UnityEditor;
     using System.Net;
@@ -229,6 +229,12 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
+        Vector3 currentVelocity = rb.linearVelocity;
+        if (currentVelocity.y < -12)
+        {
+            SceneManager.LoadScene(0);
+        }
+        
         if (canMask)
         {
             if(Input.GetMouseButtonUp(1))
