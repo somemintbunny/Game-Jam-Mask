@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;
 public class FirstPersonController : MonoBehaviour
 {
     public GameObject maskView;
+    public GameObject antiMaskView;
     public float maskTime = 600;
     public float maskCooldown;
     public bool canMask = true;
@@ -437,9 +438,11 @@ public class FirstPersonController : MonoBehaviour
         if(Masked)
         {
             maskView.SetActive(true);
+            antiMaskView.SetActive(false);
         }else
         {
             maskView.SetActive(false);
+            antiMaskView.SetActive(true);
         }
         #endregion
         #region Movement
