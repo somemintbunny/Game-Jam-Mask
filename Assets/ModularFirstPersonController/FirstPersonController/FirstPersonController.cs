@@ -258,6 +258,7 @@ public class FirstPersonController : MonoBehaviour
         // Control camera movement
         if(cameraCanMove)
         {
+            Vector3 velocity = rb.linearVelocity;
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 
             if (!invertCamera)
