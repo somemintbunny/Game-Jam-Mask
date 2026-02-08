@@ -230,28 +230,22 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
-        Vector3 currentVelocity = rb.linearVelocity;
-        if (currentVelocity.y < -12)
+
+        if (Input.GetKeyDown("1"))
         {
-            SceneManager.LoadScene(0);
-        }
-        
-        if (canMask)
+            QualitySettings.SetQualityLevel(0, true);
+        }else if (Input.GetKeyDown("2"))
         {
-            if(Input.GetMouseButtonUp(1))
-            {
-                if(Masked)
-                {
-                    Masked = false;
-                }else
-                {
-                    Masked = true;
-                }
-            }
-        }
-        else
+            QualitySettings.SetQualityLevel(1, true);
+        }else if (Input.GetKeyDown("3"))
         {
-            Masked = false;
+            QualitySettings.SetQualityLevel(2, true);
+        }else if (Input.GetKeyDown("4"))
+        {
+            QualitySettings.SetQualityLevel(3, true);
+        }else if (Input.GetKeyDown("5"))
+        {
+            QualitySettings.SetQualityLevel(4, true);
         }
         #region Camera
 
@@ -323,6 +317,30 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
         #endregion
+        Vector3 currentVelocity = rb.linearVelocity;
+        if (currentVelocity.y < -12)
+        {
+            SceneManager.LoadScene(0);
+        }
+        
+        if (canMask)
+        {
+            if(Input.GetMouseButtonUp(1))
+            {
+                if(Masked)
+                {
+                    Masked = false;
+                }else
+                {
+                    Masked = true;
+                }
+            }
+        }
+        else
+        {
+            Masked = false;
+        }
+
 
         #region Sprint
 
@@ -418,6 +436,9 @@ public class FirstPersonController : MonoBehaviour
 
     void FixedUpdate()
     {
+
+
+
         #region Mask
         if(Masked && maskTime > 0)
         {
