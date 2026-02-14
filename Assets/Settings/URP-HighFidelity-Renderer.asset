@@ -24,7 +24,7 @@ MonoBehaviour:
     Radius: 0.25
     Samples: 0
     BlurQuality: 0
-    Falloff: 100
+    Falloff: 50
     SampleCount: -1
 --- !u!114 &11400000
 MonoBehaviour:

@@ -230,6 +230,7 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
+        //shitty lazy solution (temporary)
 
         if (Input.GetKeyDown("1"))
         {
@@ -246,6 +247,9 @@ public class FirstPersonController : MonoBehaviour
         }else if (Input.GetKeyDown("5"))
         {
             QualitySettings.SetQualityLevel(4, true);
+        }else if (Input.GetKeyDown("6"))
+        {
+            QualitySettings.SetQualityLevel(5, true);
         }
         #region Camera
 
