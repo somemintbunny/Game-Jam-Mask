@@ -318,7 +318,7 @@ public class FirstPersonController : MonoBehaviour
         #endregion
         #endregion
         Vector3 currentVelocity = rb.linearVelocity;
-        if (currentVelocity.y < -12)
+        if (currentVelocity.y < -13.5)
         {
             SceneManager.LoadScene(0);
         }
