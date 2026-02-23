@@ -6,7 +6,7 @@ using UnityEngine;
 public class MaskLight : MonoBehaviour
 {
     // Start is called before the first frame update
-    Light lt;
+    public Light lt;
     void Start()
     {
         lt = GetComponent<Light>();

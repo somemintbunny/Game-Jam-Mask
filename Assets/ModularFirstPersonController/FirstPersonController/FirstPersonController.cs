@@ -16,6 +16,7 @@ using UnityEngine.SceneManagement;
 
 public class FirstPersonController : MonoBehaviour
 {
+
     public GameObject maskView;
     public GameObject antiMaskView;
     public float maskTime = 600;
@@ -23,8 +24,6 @@ public class FirstPersonController : MonoBehaviour
     public bool canMask = true;
     public static FirstPersonController instance;
     private Rigidbody rb;
-
-    #region Camera Movement Variables
 
     public Camera playerCamera;
 
@@ -45,8 +44,6 @@ public class FirstPersonController : MonoBehaviour
     private float pitch = 0.0f;
     private Image crosshairObject;
 
-    #region Camera Zoom Variables
-
     public bool enableZoom = true;
     public bool holdToZoom = false;
     public KeyCode zoomKey = KeyCode.Mouse1;
@@ -56,11 +53,6 @@ public class FirstPersonController : MonoBehaviour
     // Internal Variables
     private bool isZoomed = false;
 
-    #endregion
-    #endregion
-
-    #region Movement Variables
-
     public bool playerCanMove = true;
     public float walkSpeed = 9f;
     public float maxVelocityChange = 3f;
@@ -69,8 +61,6 @@ public class FirstPersonController : MonoBehaviour
     // Internal Variables
     private bool isWalking = false;
     private float currentSpeed;
-
-    #region Sprint
 
     public bool enableSprint = true;
     public bool unlimitedSprint = false;
@@ -100,20 +90,12 @@ public class FirstPersonController : MonoBehaviour
     private float sprintCooldownReset;
     public bool Masked;
 
-    #endregion
-
-    #region Jump
-
     public bool enableJump = true;
     public KeyCode jumpKey = KeyCode.Space;
     public float jumpPower = 5f;
     public bool isVault = false;
     // Internal Variables
     private bool isGrounded = false;
-
-    #endregion
-
-    #region Crouch
 
     public bool enableCrouch = true;
     public bool holdToCrouch = true;
@@ -125,11 +107,6 @@ public class FirstPersonController : MonoBehaviour
     private bool isCrouched = false;
     private Vector3 originalScale;
 
-    #endregion
-    #endregion
-
-    #region Head Bob
-
     public bool enableHeadBob = true;
     public Transform joint;
     public float bobSpeed = 10f;
@@ -138,9 +115,6 @@ public class FirstPersonController : MonoBehaviour
     // Internal Variables
     private Vector3 jointOriginalPos;
     private float timer = 0;
-
-    #endregion
-
 
     private void Awake()
     {
@@ -162,6 +136,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        maskBar.instance.MaxNumber(maskTime);
         instance = this;
         if(lockCursor)
         {
@@ -447,6 +422,7 @@ public class FirstPersonController : MonoBehaviour
         if(Masked && maskTime > 0)
         {
             maskTime--; 
+            maskBar.instance.SetNumber(maskTime);
         }  //for limiting mask use
         if(maskTime == 0){
             canMask = false;
@@ -454,6 +430,7 @@ public class FirstPersonController : MonoBehaviour
         if (!canMask && maskTime < 600)
         {
             maskTime++;
+            maskBar.instance.SetNumber(maskTime);
         }
         if(maskTime == 600)
         {
