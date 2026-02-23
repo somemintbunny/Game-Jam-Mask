@@ -19,8 +19,8 @@ public class FirstPersonController : MonoBehaviour
 
     public GameObject maskView;
     public GameObject antiMaskView;
-    public float maskTime = 600;
-    public float maskCooldown;
+    public int maskTime = 600;
+    public int maskCooldown;
     public bool canMask = true;
     public static FirstPersonController instance;
     private Rigidbody rb;
@@ -136,7 +136,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        maskBar.instance.MaxNumber(maskTime);
+        //maskBar.instance.MaxNumber(maskTime);
         instance = this;
         if(lockCursor)
         {
@@ -422,7 +422,7 @@ public class FirstPersonController : MonoBehaviour
         if(Masked && maskTime > 0)
         {
             maskTime--; 
-            maskBar.instance.SetNumber(maskTime);
+            //maskBar.instance.SetNumber(maskTime);
         }  //for limiting mask use
         if(maskTime == 0){
             canMask = false;
@@ -430,7 +430,7 @@ public class FirstPersonController : MonoBehaviour
         if (!canMask && maskTime < 600)
         {
             maskTime++;
-            maskBar.instance.SetNumber(maskTime);
+            //maskBar.instance.SetNumber(maskTime);
         }
         if(maskTime == 600)
         {

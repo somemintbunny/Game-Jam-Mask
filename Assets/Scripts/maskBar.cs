@@ -6,15 +6,19 @@ public class maskBar : MonoBehaviour
     public Slider slider;
     public static maskBar instance;
 
-    public void MaxNumber(float mask)
+    public void MaxNumber(int mask)
     {
         slider.maxValue = mask;
         slider.value = mask;
     }
 
-    public void SetNumber(float mask)
+    public void SetNumber(int mask)
     {
         slider.value = mask;
+    }
+    void Update()
+    {
+        slider.value = FirstPersonController.instance.maskTime;
     }
 
 }
