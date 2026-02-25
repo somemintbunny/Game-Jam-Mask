@@ -58,9 +58,9 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0.164
+    - _Metallic: 0.16
     - _Parallax: 0.02
-    - _Smoothness: 0.175
+    - _Smoothness: 0.379
     m_Colors:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

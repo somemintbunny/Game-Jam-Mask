@@ -4,6 +4,7 @@ public class maskBar : MonoBehaviour
 {
 
     public Slider slider;
+    public Slider healthSlider;
     public static maskBar instance;
 
     public void MaxNumber(int mask)
