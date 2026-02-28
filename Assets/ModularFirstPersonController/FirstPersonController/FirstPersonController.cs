@@ -16,7 +16,7 @@ using UnityEngine.SceneManagement;
 
 public class FirstPersonController : MonoBehaviour
 {
-
+    public float health = 1000;
     public GameObject maskView;
     public GameObject antiMaskView;
     public int maskTime = 600;
@@ -296,12 +296,7 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
         #endregion
-        Vector3 currentVelocity = rb.linearVelocity;
-        if (currentVelocity.y < -13.5)
-        {
-            SceneManager.LoadScene(0);
-        }
-        
+
         if (canMask)
         {
             if(Input.GetMouseButtonUp(1))
@@ -416,7 +411,15 @@ public class FirstPersonController : MonoBehaviour
     void FixedUpdate()
     {
 
-
+        Vector3 currentVelocity = rb.linearVelocity;
+        if (currentVelocity.y < -13.5)
+        {
+            health = health + currentVelocity.y;
+        }
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
 
         #region Mask
         if(Masked && maskTime > 0)

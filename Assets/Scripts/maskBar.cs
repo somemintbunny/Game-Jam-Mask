@@ -20,6 +20,7 @@ public class maskBar : MonoBehaviour
     void Update()
     {
         slider.value = FirstPersonController.instance.maskTime;
+        healthSlider.value = FirstPersonController.instance.health;
     }
 
 }
