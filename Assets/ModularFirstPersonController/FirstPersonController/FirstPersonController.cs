@@ -16,6 +16,10 @@ using UnityEngine.SceneManagement;
 
 public class FirstPersonController : MonoBehaviour
 {
+    public Joystick joy;
+    public float moveX;
+    public float moveY;
+    public bool touchDevice;
     public float health = 1000;
     public GameObject maskView;
     public GameObject antiMaskView;
@@ -115,9 +119,13 @@ public class FirstPersonController : MonoBehaviour
     // Internal Variables
     private Vector3 jointOriginalPos;
     private float timer = 0;
+    public AudioSource MusicSource;
+    public AudioSource MusicSource2;
+    private bool musicFadeOutEnabled = false;
 
     private void Awake()
     {
+
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
@@ -136,7 +144,9 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         //maskBar.instance.MaxNumber(maskTime);
+        PlayerMusic();
         instance = this;
         if(lockCursor)
         {
@@ -184,13 +194,28 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
     }
+    public void PlayerMusic()
+    {
+        musicFadeOutEnabled = false;
+        MusicSource.volume = 1f;
+        MusicSource.Play();
+    }
 
+    public void FadeOutMusic()
+    {
+        musicFadeOutEnabled = true;
+    }
     float camRotation;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Vault"))
         {
             isVault = true;
+        }
+        if (collision.CompareTag("rooftop"))
+        {
+            FadeOutMusic();
+
         }
 
     }
@@ -206,7 +231,26 @@ public class FirstPersonController : MonoBehaviour
     private void Update()
     {
         //shitty lazy solution (temporary)
+        if (musicFadeOutEnabled)
+        {
+            if (MusicSource.volume <= 0.1f)
+            {
+                MusicSource.Stop();
+                musicFadeOutEnabled = false;
+                MusicSource2.volume = 1f;
+                MusicSource2.Play();
+            }
+            else
+            {
+                float newVolume = MusicSource.volume - (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume < 0f)
+                {
+                    newVolume = 0f;
+                }
+                MusicSource.volume = newVolume;
 
+            }
+        }
         if (Input.GetKeyDown("1"))
         {
             QualitySettings.SetQualityLevel(0, true);
@@ -457,7 +501,14 @@ public class FirstPersonController : MonoBehaviour
         {
             // Calculate how fast we should be moving
             Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-
+            if(touchDevice)
+            {
+                Vector2 joyMovement = new Vector2(moveX, moveY);
+                joyMovement.Normalize();
+                float joyMagnitude = joyMovement.magnitude;
+                joyMagnitude = Mathf.Clamp01(joyMagnitude);
+                targetVelocity = joyMovement * joyMagnitude;
+            }
             // Checks if player is walking and isGrounded
             // Will allow head bob
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
