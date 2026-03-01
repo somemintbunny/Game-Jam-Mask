@@ -122,7 +122,7 @@ public class FirstPersonController : MonoBehaviour
     public AudioSource MusicSource;
     public AudioSource MusicSource2;
     private bool musicFadeOutEnabled = false;
-
+    public Animator animator;
     private void Awake()
     {
 
@@ -230,6 +230,14 @@ public class FirstPersonController : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetMouseButtonDown(0)) //left mouse detect to do attack animation
+        {
+            Whack();
+        }else if(Input.GetMouseButtonUp(0))
+        {
+            StopWhack();
+        }
+
         //shitty lazy solution (temporary)
         if (musicFadeOutEnabled)
         {
@@ -651,6 +659,16 @@ public class FirstPersonController : MonoBehaviour
 
             isCrouched = true;
         }
+    }
+    public void Whack()
+    {
+        Debug.Log("Called void Whack -- Successful");
+        animator.SetBool("whenAttack", true);
+    }
+    public void StopWhack()
+    {
+        animator.SetBool("whenAttack", false);
+        Debug.Log("Called void StopWhack -- Successful");
     }
 
     private void HeadBob()
