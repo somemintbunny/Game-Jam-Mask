@@ -115,12 +115,15 @@ public class FirstPersonController : MonoBehaviour
     public Transform joint;
     public float bobSpeed = 10f;
     public Vector3 bobAmount = new Vector3(.15f, .05f, 0f);
-
+    public bool musicFadeInEnabled = false;
+    public bool mallMusicFadeOutEnabled = false;
+    public bool mallMusicFadeInEnabled = false;
     // Internal Variables
     private Vector3 jointOriginalPos;
     private float timer = 0;
     public AudioSource MusicSource;
     public AudioSource MusicSource2;
+        public AudioSource MusicSource3;
     private bool musicFadeOutEnabled = false;
     public Animator animator;
     private void Awake()
@@ -205,6 +208,14 @@ public class FirstPersonController : MonoBehaviour
     {
         musicFadeOutEnabled = true;
     }
+    public void FadeInMallMusic()
+    {
+        mallMusicFadeInEnabled = true;
+    }
+    public void FadeOutMallMusic()
+    {
+        mallMusicFadeOutEnabled = true;
+    }
     float camRotation;
     private void OnTriggerEnter(Collider collision)
     {
@@ -217,6 +228,12 @@ public class FirstPersonController : MonoBehaviour
             FadeOutMusic();
 
         }
+        if (collision.CompareTag("mall"))
+        {
+            MusicSource3.volume = 0f;
+            MusicSource3.Play();
+            FadeInMallMusic();
+        }
 
     }
 
@@ -225,6 +242,12 @@ public class FirstPersonController : MonoBehaviour
         if (collision.CompareTag("Vault"))
         {
             isVault = false;
+        }
+        if (collision.CompareTag("mall"))
+        {
+            MusicSource2.volume = 0f;
+            MusicSource2.Play();
+            FadeOutMallMusic();
         }
 
     }
@@ -247,6 +270,89 @@ public class FirstPersonController : MonoBehaviour
                 musicFadeOutEnabled = false;
                 MusicSource2.volume = 1f;
                 MusicSource2.Play();
+            }
+            else
+            {
+                float newVolume = MusicSource.volume - (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume < 0f)
+                {
+                    newVolume = 0f;
+                }
+                MusicSource.volume = newVolume;
+
+            }
+        }
+        if (mallMusicFadeOutEnabled)
+        {
+            if (MusicSource3.volume <= 0.1f)
+            {
+                MusicSource3.Stop();
+                mallMusicFadeOutEnabled = false;
+            }
+            else
+            {
+                float newVolume = MusicSource3.volume - (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume < 0f)
+                {
+                    newVolume = 0f;
+                }
+                MusicSource3.volume = newVolume;
+
+            }
+            //rooftops music faDE in
+            if (MusicSource2.volume >= 0.95f)
+            {
+                
+                mallMusicFadeOutEnabled = false;
+            }
+            else
+            {
+                float newVolume = MusicSource2.volume + (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume > 1f)
+                {
+                    newVolume = 1f;
+                }
+                MusicSource2.volume = newVolume;
+
+            }
+        }
+        if (mallMusicFadeInEnabled)
+        {
+            if (MusicSource3.volume >= 0.9)
+            {
+                mallMusicFadeInEnabled = false;
+            }
+            else
+            {
+                float newVolume = MusicSource3.volume + (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume > 1f)
+                {
+                    newVolume = 1f;
+                }
+                MusicSource3.volume = newVolume;
+
+            }
+            //rooftop music fade out
+            if (MusicSource2.volume <= 0.05f)
+            {
+                MusicSource2.Stop();
+                mallMusicFadeOutEnabled = false;
+            }
+            else
+            {
+                float newVolume = MusicSource2.volume - (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+                if (newVolume < 0f)
+                {
+                    newVolume = 0f;
+                }
+                MusicSource2.volume = newVolume;
+
+            }
+            //floor music fade out
+            if (MusicSource.volume <= 0.1f)
+            {
+                MusicSource.Stop();
+                mallMusicFadeOutEnabled = false;
             }
             else
             {
