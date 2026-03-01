@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vault
   - rooftop
+  - mall
   layers:
   - Default
   - TransparentFX
