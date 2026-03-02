@@ -23,8 +23,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
+    m_OverrideState: 1
+    m_Value: 0.526
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -32,6 +32,9 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 0
+  filter:
     m_OverrideState: 0
     m_Value: 0
   downscale:
@@ -62,13 +65,13 @@ MonoBehaviour:
   active: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.066037714, b: 0.050500203, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   center:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.389
+    m_Value: 0.401
   smoothness:
     m_OverrideState: 1
     m_Value: 0.614
@@ -107,20 +110,20 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 4.93
   aperture:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 6.2
   focalLength:
     m_OverrideState: 1
-    m_Value: 83
+    m_Value: 85
   bladeCount:
     m_OverrideState: 1
     m_Value: 4
   bladeCurvature:
     m_OverrideState: 1
-    m_Value: 0.585
+    m_Value: 0
   bladeRotation:
     m_OverrideState: 1
-    m_Value: -43
+    m_Value: -119
 --- !u!114 &-2560653026815082395
 MonoBehaviour:
   m_ObjectHideFlags: 3
