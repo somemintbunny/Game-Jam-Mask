@@ -19392,7 +19392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -19426,12 +19426,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -24860,7 +24860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -24894,7 +24894,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -25002,7 +25002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -25036,12 +25036,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -32791,7 +32791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -32825,12 +32825,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -33308,7 +33308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -33342,12 +33342,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -61850,7 +61850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -61884,7 +61884,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -67064,7 +67064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -67098,7 +67098,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -68642,7 +68642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -68676,12 +68676,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -72420,7 +72420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -72454,7 +72454,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -75644,7 +75644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -75678,12 +75678,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -81298,7 +81298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -81332,12 +81332,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -87482,7 +87482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -87516,12 +87516,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -88857,7 +88857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -88891,7 +88891,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -92950,7 +92950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -92984,12 +92984,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -94135,7 +94135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -94169,12 +94169,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -96451,7 +96451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -96485,12 +96485,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -98467,7 +98467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -98501,12 +98501,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -103176,7 +103176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -103209,13 +103209,13 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
-    m_Type: 0
-    m_Resolution: 128
+    m_Type: 2
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -115528,7 +115528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -115562,7 +115562,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -118303,7 +118303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -118337,12 +118337,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -122310,116 +122310,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8391222552659086748, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8.842041
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 8.842041
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.3278565
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 49.56
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -4683669308469848369, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 34.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.18
-      objectReference: {fileID: 0}
-    - target: {fileID: -1461304994638716399, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ca77c355f50ddca3afb1d0d1dab71a2, type: 2}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.58
-      objectReference: {fileID: 0}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -804731622281664130, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -678588488315902003, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 54.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce0d5264ab779a0f787d0363e114bda1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -122554,6 +122444,116 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: houses
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.842041
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.842041
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.3278565
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 49.56
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ca77c355f50ddca3afb1d0d1dab71a2, type: 2}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -804731622281664130, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -678588488315902003, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 54.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -126172,7 +126172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -126206,12 +126206,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -134789,7 +134789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -134823,7 +134823,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -136054,7 +136054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -136088,7 +136088,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -140030,7 +140030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -140064,12 +140064,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -145019,7 +145019,7 @@ PrefabInstance:
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
       propertyPath: enableHeadBob
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
@@ -145144,22 +145144,22 @@ PrefabInstance:
     - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.027106792
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.15364882
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36,
+        type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.9457864
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.69270235
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106429, guid: 6bacecc4f3df9584198879c73a6b6c36,
         type: 3}
@@ -145882,7 +145882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -145916,7 +145916,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -147827,7 +147827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -147861,12 +147861,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -148087,7 +148087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -148121,12 +148121,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -148214,7 +148214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -148248,7 +148248,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -148356,7 +148356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -148390,12 +148390,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -152750,121 +152750,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8391222552659086748, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: -7146521406498821007, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8.373147
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 8.82446
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.04532
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.20905
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 69.416
-      objectReference: {fileID: 0}
-    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -4683669308469848369, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 34.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.18
-      objectReference: {fileID: 0}
-    - target: {fileID: -1461304994638716399, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.58
-      objectReference: {fileID: 0}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -804731622281664130, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -678588488315902003, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
-    - target: {fileID: -516098083770646512, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 54.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416272007918961125, guid: 27ebb837f83d8444a81647160ff8d8a3,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce0d5264ab779a0f787d0363e114bda1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -153019,6 +152904,121 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.373147
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.82446
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.04532
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.20905
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 69.416
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -1461304994638716399, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -804731622281664130, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -678588488315902003, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f1879440f4a2eace697c82a4189c86f3, type: 2}
+    - target: {fileID: -516098083770646512, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 54.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 27ebb837f83d8444a81647160ff8d8a3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -154812,7 +154812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -154846,7 +154846,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -154945,7 +154945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -154979,7 +154979,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -161585,7 +161585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -161618,13 +161618,13 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
-    m_Type: 0
-    m_Resolution: 128
+    m_Type: 2
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -165877,7 +165877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -165911,12 +165911,12 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -169488,7 +169488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 1
+  m_AdditionalLightsShadowResolutionTier: -1
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
@@ -169522,7 +169522,7 @@ Light:
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
-    m_Resolution: 128
+    m_Resolution: 1024
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05

@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Security.Cryptography;
+using System.Data.Common;
 #if UNITY_EDITOR
     using UnityEditor;
     using System.Net;
@@ -267,10 +269,11 @@ public class FirstPersonController : MonoBehaviour
             if (MusicSource.volume <= 0.1f)
             {
                 MusicSource.Stop();
-                musicFadeOutEnabled = false;
-                MusicSource2.volume = 1f;
+
+
                 MusicSource2.Play();
-            }
+                MusicSource2.volume = 1f;
+                musicFadeOutEnabled = false;            }
             else
             {
                 float newVolume = MusicSource.volume - (0.2f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
@@ -559,11 +562,13 @@ public class FirstPersonController : MonoBehaviour
         #endregion
 
         CheckGround();
+        bobSpeed = rb.linearVelocity.magnitude * 1.5f;
 
-        if(enableHeadBob)
+        if(enableHeadBob && isGrounded)
         {
             HeadBob();
         }
+
     }
 
     void FixedUpdate()
@@ -576,13 +581,21 @@ public class FirstPersonController : MonoBehaviour
         }
         if(health <= 0)
         {
-            SceneManager.LoadScene(0);
+            if (isGrounded)
+            {
+                SceneManager.LoadScene(0);
+            }
+
         }
 
         #region Mask
         if(Masked && maskTime > 0)
         {
-            maskTime--; 
+            if(health > 0)
+            {
+                maskTime--; 
+            }
+
             //maskBar.instance.SetNumber(maskTime);
         }  //for limiting mask use
         if(maskTime == 0){
@@ -622,6 +635,7 @@ public class FirstPersonController : MonoBehaviour
                 float joyMagnitude = joyMovement.magnitude;
                 joyMagnitude = Mathf.Clamp01(joyMagnitude);
                 targetVelocity = joyMovement * joyMagnitude;
+
             }
             // Checks if player is walking and isGrounded
             // Will allow head bob
@@ -718,23 +732,25 @@ public class FirstPersonController : MonoBehaviour
         // Adds force to the player rigidbody to jump
         if (isGrounded)
         {
-            if(isVault)
+            if (isVault)
             {
-                if(Input.GetKey(KeyCode.E))
+                if(Input.GetKeyDown(KeyCode.E))
                 {
-                    rb.AddForce(GetComponent<Rigidbody>().linearVelocity.x * 1.2f, jumpPower*0.4f, GetComponent<Rigidbody>().linearVelocity.z * 1.2f, ForceMode.Impulse);
-                    isGrounded = false;
+                    // Handle vaulting logic
+                    rb.AddForce(jumpPower, jumpPower * 0.1f, 0, ForceMode.Impulse);
+
                 }else
                 {
-                    rb.AddForce(GetComponent<Rigidbody>().linearVelocity.x * -1, jumpPower*1.4f, GetComponent<Rigidbody>().linearVelocity.z * -1, ForceMode.Impulse);
-                    isGrounded = false;
+                    rb.AddForce(rb.linearVelocity.x * -0.8f, jumpPower * 1.3f, 0, ForceMode.Impulse);
                 }
-
             }else
-            {
-                rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
-                isGrounded = false;
+            {           
+                rb.AddForce(0, jumpPower, 0, ForceMode.Impulse);
             }
+            
+            isGrounded = false;
+
+
 
         }
 
